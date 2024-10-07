@@ -1,0 +1,162 @@
+.tech_section {
+
+    background-color: var(--dark-background);
+    width: 100%;
+    display: flex;
+}
+
+.tech_section .tech_stack {
+    position: relative;
+    top: 70px;
+    overflow: hidden;
+    margin: auto;
+    width: 30%;
+    min-height: 300px;
+    border-radius: 100%;
+    /* border: 2px solid; */
+}
+
+.tech {
+    display: block;
+    position: absolute;
+    font-weight: 700;
+    animation: scale 5s ease infinite;
+    animation-delay: calc(-0.3s * var(--i));
+    color: #fff;
+}
+
+@keyframes scale {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    10%,
+    70% {
+        transform: scale(1.1);
+    }
+}
+
+.thtml {
+    left: 50%;
+    top: 10px;
+    font-size: 2rem;
+}
+
+.css {
+    left: 30%;
+    top: 20px;
+    font-size: 2.4rem;
+}
+
+.js {
+    left: 45%;
+    top: 50px;
+    font-size: 2.6rem;
+}
+
+.react {
+    left: 30%;
+    top: 90px;
+    font-size: 3rem;
+}
+
+.mongo {
+    left: 20%;
+    top: 70px;
+    font-size: 1.3rem;
+    opacity: .8;
+}
+
+.bootstrap {
+    left: 30%;
+    top: 10px;
+    font-size: 1.1rem;
+    opacity: .6;
+}
+
+.node {
+    left: 63%;
+    top: 100px;
+    font-size: 1.4rem;
+    opacity: .7;
+}
+
+.express {
+    left: 60%;
+    top: 130px;
+    font-size: 1rem;
+    opacity: .5;
+}
+.git{
+    left: 50%;
+    top: 50px;
+    font-size: .9rem;
+    opacity: .5;
+}
+.logos_icons {
+    width: 30%;
+    /* height: 20vh; */
+    position: relative;
+}
+
+.logos {
+    width: 50px;
+    opacity: .5;
+    animation: slide 5s linear infinite;
+}
+
+
+.logos:nth-child(1) {
+    --x:100px;
+    --y:210px;
+    transform: translateX(100px) translateY(210px);
+    animation-duration:30s;
+}
+.logos:nth-child(2) {
+    --x:10px;
+    --y:150px;
+    transform: translateX(10px) translateY(150px);
+    animation-duration:20s;
+}
+.logos:nth-child(3) {
+    --x:110px;
+    --y:220px;
+    transform: translateX(110px) translateY(220px);
+    animation-duration:33s;
+}
+.logos:nth-child(4) {
+    --x:0px;
+    --y:100px;
+    transform: translateX(0px) translateY(100px);
+    animation-duration:15s;
+}
+.logos:nth-child(5) {
+    --x:10px;
+    --y:10px;
+    transform: translateX(10px) translateY(10px);
+    animation-duration:5s;
+}
+.logos:nth-child(6) {
+    --x:10px;
+    --y:60px;
+    transform: translateX(10px) translateY(60px);
+    animation-duration:10s;
+}
+.logos:nth-child(7) {
+    --x:10px;
+    --y:130px;
+    transform: translateX(10px) translateY(130px);
+    animation-duration:18s;
+}
+@keyframes slide {
+    100%{
+        transform: translateX(var(--x)) translateY(0);
+        opacity: 0;
+    }
+    0%{
+        transform: translateX(var(--x)) translateY(var(--y));
+        opacity: 1;
+    }
+}

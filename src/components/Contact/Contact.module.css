@@ -1,0 +1,9 @@
+.contact_section{
+    width: 100%;
+}
+.contact_section h2{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}

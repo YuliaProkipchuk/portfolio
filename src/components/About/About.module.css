@@ -2,9 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 60%;
-    height: 70vh;
+    width: 70%;
+    min-height: 70vh;
     margin: auto;
+    flex-wrap: wrap;
 }
 .photo{
     width: 300px;
@@ -13,26 +14,30 @@
     overflow: hidden;
 }
 .photo img{
-    width: 300px;
+    max-width: 300px;
+    /* max-height: 300px; */
     aspect-ratio: 1/1;
     object-fit: cover;
     /* object-position: 40%; */
 }
 .about_section article{
-    /* width: calc(100% - 300px); */
-    height: 300px;
+    min-height: 300px;
     /* align-self: flex-start; */
 }
 .about_section article h1{
     font-size: 3rem;
 }
 .position{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: rgb(82, 81, 88);
     letter-spacing: 2px;
+    margin-bottom: 5px;
 }
 .intro_btns{
     min-height: 100px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 .intro_btns button{
     padding: .75rem 1.75rem;
@@ -42,6 +47,10 @@
     margin-top: 30px;
     font-weight: 600;
 }
+.about_info{
+    max-width: 500px;
+
+}
 .download_btn{
     background-color: var(--orange);
     color: white;
@@ -49,4 +58,27 @@
 .intro_btns .contact_btn{
     background: none;
     border: 1px solid black;
+}
+.socials{
+    align-self: center;
+}
+.socials>*{
+    font-size: 2rem;
+    transition: color .5s;
+}
+.socials>a:nth-child(1){
+    margin-right: 20px;
+
+}
+.socials>*:hover{
+    cursor: pointer;
+    color: var(--orange);
+}
+@media screen and (max-width:1200px) {
+    .about_section article{
+        text-align: center;
+    }
+    .intro_btns{
+        justify-content: center;
+    }
 }

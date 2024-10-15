@@ -1,13 +1,12 @@
 import "./App.css";
 import About from "./components/About/About";
 import ContactSection from "./components/Contact/ContactSection";
+import Footer from "./components/Footer/Footer";
 import Navigation from "./components/Navigation/Navigation";
 import ProjectSection from "./components/Projects/ProjectsSection";
 import Technologies from "./components/Technologies/Technologies";
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import "bootstrap-icons/font/bootstrap-icons.css";
 function App() {
-  console.log("renders");
-
   return (
     <>
       <header>
@@ -31,10 +30,10 @@ function App() {
           </p>
           <hr />
         </section>
-        <ProjectSection/>
-        <ContactSection/>
+        <ProjectSection />
+        <ContactSection />
       </main>
-      <footer></footer>
+      <Footer />
     </>
   );
 }

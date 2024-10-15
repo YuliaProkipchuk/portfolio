@@ -1,9 +1,72 @@
 .contact_section{
     width: 100%;
+    margin-bottom: 20px;
 }
 .contact_section h2{
     text-align: center;
     font-size: 2rem;
     text-transform: uppercase;
     margin: 1rem 0;
+}
+.contact_section form{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+
+}
+.contact_section form div{
+    min-height: 100px;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+
+}
+
+.contact_section form div input{
+    height: 40px;
+
+}
+.contact_section label{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.contact_section input, .contact_section textarea{
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid rgb(192, 192, 192);
+    font: inherit;
+
+}
+.contact_section input:focus, .contact_section textarea:focus{
+    outline: 2px solid rgb(192, 192, 192);
+
+}
+.contact_section textarea{
+    min-height: 150px;
+    resize: none;
+}
+.contact_section button{
+    margin-top: 15px;
+    /* height: 40px;*/
+    max-width: 250px;
+    min-width: 150px;
+    border-radius: 5px; 
+    padding: .75rem 1.75rem;
+    border-radius: 100px;
+    border: none;
+    background-color: var(--orange);
+    color: #fff;
+    font-weight: 600;
+}
+.contact_section button:hover{
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+@media screen and (max-width:720px){
+    .contact_section form div{
+        width: 100%;
+    }
 }

@@ -10,7 +10,7 @@
     top: 70px;
     overflow: hidden;
     margin: auto;
-    width: 30%;
+    width: 100%;
     min-height: 300px;
     border-radius: 100%;
     /* border: 2px solid; */
@@ -99,6 +99,7 @@
     width: 30%;
     /* height: 20vh; */
     position: relative;
+    display: none;
 }
 
 .logos {
@@ -158,5 +159,13 @@
     0%{
         transform: translateX(var(--x)) translateY(var(--y));
         opacity: 1;
+    }
+}
+@media screen and (min-width:1200px) {
+    .logos_icons{
+        display: block;
+    }
+    .tech_section .tech_stack{
+        width: 40%;
     }
 }

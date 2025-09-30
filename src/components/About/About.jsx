@@ -1,6 +1,6 @@
 import myPhoto from "../../assets/photo_2024-10-02_17-11-21.jpg";
 import classes from "./About.module.css";
-import CV from "../../assets/YULIA-PROKIPCHUK_CV.pdf";
+import CV from "../../assets/CV_Yullia_Prokipchuk_FS.pdf";
 export default function About() {
   return (
     <section id="about" className={classes.about_section}>
@@ -9,7 +9,7 @@ export default function About() {
       </div>
       <article>
         <div className={classes.intro}>
-          <h1>Hi, I'm Yulia Prokipchuk</h1>
+          <h1>Hi, I'm Yuliia Prokipchuk</h1>
           <p className={classes.position}>Frontend Developer</p>
           <p className={classes.about_info}>
             Enthusiastic and detail-oriented frontend developer with a strong
